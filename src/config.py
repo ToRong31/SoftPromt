@@ -32,7 +32,7 @@ class TrainConfig:
 
     # training
     output_dir: str = "./t5_prompt_tuning_selected_labels"
-    save_dir: str = "/kaggle/working/t5_prompt_adapter_selected_labels"
+    save_dir: str = "./t5_prompt_adapter_selected_labels"
     epochs: int = 5
     lr: float = 5e-3
     weight_decay: float = 1e-5

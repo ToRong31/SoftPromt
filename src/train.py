@@ -261,9 +261,6 @@ class T5PromptLabelTrainer:
         print("=== TEST AFTER TRAIN ===")
         self.eval_auc_stream(self.test_tok, "test_after", batch_size=eval_stream_bs)
 
-        print("VAL METRICS:", self.trainer.evaluate(eval_dataset=self.val_tok))
-        print("TEST METRICS:", self.trainer.evaluate(eval_dataset=self.test_tok))
-
         self.trainer.model.save_pretrained(save_dir)
         self.tokenizer.save_pretrained(save_dir)
         print(f"Saved to {save_dir}")
