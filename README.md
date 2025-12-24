@@ -149,7 +149,7 @@ Trong quá trình training, bạn sẽ thấy:
 - Đánh giá trên test set trước và sau khi train
 
 Model adapter (chỉ virtual tokens) sẽ được lưu tại thư mục được chỉ định trong `config.py`:
-- Mặc định: `/kaggle/working/t5_prompt_adapter_selected_labels`
+- Mặc định: `./t5_prompt_adapter_selected_labels`
 
 ---
 
